@@ -1,0 +1,15 @@
+{
+  "selected": "random_forest",
+  "criterion": "student_test Top-1, tie-break log loss",
+  "test_top1": 0.8517744211571631,
+  "models_compared": [
+    "decision_tree",
+    "gaussian_nb",
+    "gradient_boosting",
+    "knn",
+    "logistic_regression",
+    "mlp",
+    "random_forest",
+    "svm_poly"
+  ]
+}
