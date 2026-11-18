@@ -15,7 +15,7 @@ Noisy GPS points are matched to the road network. For each point, the system col
 | `models/` | Exported classifier (`classifier.joblib`), HMM parameters (`hmm_params.json`), model card (`model_card.json`) |
 | `results/` | CSV results and plots produced by the scripts |
 | `maps/` | Folium HTML maps for development |
-| `docs/` | Report notes |
+| `docs/` | Technical report (`PathSnap_Report_Team54.pdf`) and deployment checklist |
 | `data/` | Raw and processed data, evaluator trips (not committed) |
 
 ## Installation
@@ -49,6 +49,12 @@ Run the following commands in order from the project root.
 
 ```bash
 python scripts/eda.py
+```
+
+Static GPS-trajectory and road-network plots and the missing-value summary (`results/eda/trajectory_*.png`, `results/eda/missing_values.csv`):
+
+```bash
+python scripts/plot_trajectories.py
 ```
 
 2. Candidate dataset. Writes `data/processed/` (candidate and point parquet files) and `results/candidate_stats.csv`.
@@ -140,12 +146,12 @@ The reference route is never returned to the client.
 
 ## Team
 
-| Member | Area |
-|---|---|
-| Rahul Saran Sharma | Project skeleton, preprocessing (projection, network, label alignment, EDA, features, candidates), MLP, Gradient Boosting, model comparison, Folium maps, README |
-| Renetta | Training harness, Decision Tree, Random Forest, HMM/Viterbi decoder and evaluation, inference pipeline |
-| Ramalakshmi | Logistic Regression, Gaussian Naive Bayes, Bayesian hyperparameter optimisation, FastAPI backend |
-| Ramneek | KNN, SVM, tuned model export, Streamlit UI, deployment checklist |
+| Member | SRN | Area |
+|---|---|---|
+| Rahul Saran Sharma | PES1UG24AM218 | Project skeleton, preprocessing (projection, network, label alignment, EDA, features, candidates), MLP, Gradient Boosting, model comparison, Folium maps, README |
+| Renetta Isabel Nathan | PES1UG24AM221 | Training harness, Decision Tree, Random Forest, HMM/Viterbi decoder and evaluation, inference pipeline |
+| Ramalakshmi M N | PES1UG24AM219 | Logistic Regression, Gaussian Naive Bayes, Bayesian hyperparameter optimisation, FastAPI backend |
+| Ramneek Gautum | PES1UG24AM220 | KNN, SVM, tuned model export, Streamlit UI, deployment checklist |
 
 ## AI assistance
 

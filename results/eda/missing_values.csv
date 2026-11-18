@@ -1,0 +1,3 @@
+partition,trips,trips_missing_any_file,gps_rows_raw,invalid_or_duplicate_rows,trips_with_gap_over_120s,gaps_over_10s_total,max_gap_s,unmatched_point_share,isolated_nodes_total
+student_test,10,0,19160,0,1,27,210.0,0.0014091858037578175,0
+train,80,0,208417,0,18,590,153064.0,0.11102741139158512,0
