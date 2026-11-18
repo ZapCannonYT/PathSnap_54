@@ -1,0 +1,19 @@
+{
+  "model": "random_forest",
+  "objective": "GroupKFold(3) observation Top-1 on train trips",
+  "untuned_cv_top1": 0.8380211264080849,
+  "best_cv_top1": 0.8399772737665704,
+  "best_params": {
+    "n_estimators": 200,
+    "max_depth": 8,
+    "min_samples_leaf": 12,
+    "max_features": 0.6081067456177209,
+    "criterion": "entropy"
+  },
+  "tpe_trials": 15,
+  "tpe_seconds": 303.44550800323486,
+  "random_trials": 5,
+  "random_best_cv_top1": 0.8398187569747441,
+  "random_seconds": 92.60666871070862,
+  "train_rows": 109666
+}
