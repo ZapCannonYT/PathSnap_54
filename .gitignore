@@ -8,3 +8,25 @@ venv/
 .ipynb_checkpoints/
 .DS_Store
 *.log
+
+# Never commit raw data, course documents or team planning notes
+data/
+Student folder/
+*.zip
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+STEPS.md
+SCHEDULE.md
+VIVA_BRIEF.md
+ML_DESIGN.md
+PathSnap_viva.html
+PathSnap_status_and_plan.html
+R0_skeleton/
+R1_preprocessing/
+R2_models/
+R3_selection_tuning_hmm/
+R4_deployment/
+.claude/
+.env
