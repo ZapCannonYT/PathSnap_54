@@ -1,0 +1,34 @@
+{
+  "model": "random_forest",
+  "variant": "tuned",
+  "params": {
+    "n_estimators": 200,
+    "max_depth": 8,
+    "min_samples_leaf": 12,
+    "max_features": 0.6081067456177209,
+    "criterion": "entropy"
+  },
+  "features": [
+    "d_perp",
+    "d_rank",
+    "d_minus_min",
+    "d_ratio",
+    "heading_diff",
+    "heading_valid",
+    "speed",
+    "dt_prev",
+    "arc_len",
+    "proj_frac",
+    "at_endpoint",
+    "n_cand",
+    "in_prev_cands",
+    "in_next_cands",
+    "conn_prev",
+    "conn_next",
+    "end_out_degree"
+  ],
+  "candidate_radius_m": 50.0,
+  "candidate_top_k": 12,
+  "trained_on": "train partition, every 4-th matched point",
+  "student_test_top1": 0.8492134009303298
+}
